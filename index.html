@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pedro Fonseca</title>
+    <meta name="description" content="Pedro Fonseca's Personal Website" />
+    <meta name="keywords" content="portfolio personal pedro fonseca work" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/ivx1jos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="./javascript/hamburger.js" defer></script>
+    <script src="./javascript/scrolling.js" defer></script>
+    <script src="./javascript/daynightmode.js" defer></script>
+    <script src="./flowfield/perlin.js"></script>
+    <script src="./flowfield/vector.js"></script>
+    <script src="./flowfield/particle.js"></script>
+    <script src="./flowfield/makeunique.js" defer></script>
+    <header id="site-header">
+        <h1>PF<span class="chgcol">.</span></h1>
+        <nav>
+            <a href="#main">About</a>
+            <a href="#featuredprojects">Projects</a>
+            <a href="#life">My Life</a>
+            <a href="#contactarea">Contact</a>
+            <a href="website resume.pdf" id="resumeheader">RESUME</a>
+            <img class='daymode' src="./assets/day-mode.svg" alt="day mode">
+            <img class='nightmode' src="./assets/night-mode.svg" alt="night mode">
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="hamburger-menu">
+                <a href="#main">About</a>
+                <a href="#featuredprojects">Projects</a>
+                <a href="#life">My Life</a>
+                <a href="#contactarea">Contact</a>
+                <img class='daymode' src="./assets/day-mode.svg" alt="day mode">
+                <img class='nightmode' src="./assets/night-mode.svg" alt="night mode">
+            </nav>
+        </nav>
+    </header>
+    <canvas id="unique" width="1920" height="2100"></canvas>
+    <section id="main">
+        <p id="hey">Hey, I'm</p>
+        <h2>Pedro Fonseca</h2>
+        <p>I'm a <span class="highlight">software engineer</span> based in <span class="highlight">Porto,
+                Portugal</span>. I enjoy creating things that bring value to people's lives, whether that be
+            websites,
+            applications, or anything in between.</p>
+        <p>Currently <span class="highlight">studying at FEUP</span> and I've managed to gain a <span
+                class="highlight">decent amount of experience</span> and valuable knowledge from all different kinds
+            of
+            fields throughout my projects.</p>
+        <nav class="contacts">
+            <a href="#contactarea">
+                <img src="./assets/border-contacts-first.svg" alt="border">
+                <figure>
+                    <img src="./assets/email-icon.svg" alt="email icon">
+                    <figcaption>Send an email</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.linkedin.com/in/pedrofonseca02">
+                <img src="./assets/border-contacts-second.svg" alt="border">
+                <figure>
+                    <img src="./assets/linkedIn-icon.svg" alt="linkedIn icon">
+                    <figcaption>LinkedIn</figcaption>
+                </figure>
+            </a>
+            <a href="https://github.com/P3rsus">
+                <img src="./assets/border-contacts-third.svg" alt="border">
+                <figure>
+                    <img src="./assets/github-icon.svg" alt="github icon">
+                    <figcaption>Github</figcaption>
+                </figure>
+            </a>
+        </nav>
+        <img src="./assets/arrow.svg" alt="scroll down arrow">
+    </section>
+    <div class="background">
+        <section id="featuredprojects">
+            <h3>FEATURED PROJECTS</h3>
+            <section id="projects">
+                <section class="project">
+                    <img src="./assets/personal-website.png" alt="project image">
+                    <h4>Personal Website</h4>
+                    <nav class="links">
+                        <a><img class="github" src="./assets/github-icon.svg" alt="github link"></a>
+                    </nav>
+                    <p>My personal website made with html, css and javascript. Integrates the flowfield mini-project at
+                        the top. Presents my different projects and my overall experience.</p>
+                    <p class="tags">HTML - CSS - Javascript</p>
+                </section>
+                <section class="project">
+                    <img src="./assets/flowfield.png" alt="project image">
+                    <h4>Flowfield</h4>
+                    <nav class="links">
+                        <a><img class="github" src="./assets/github-icon.svg" alt="github link"></a>
+                        <a href="flowfield.html"><img class="demo" src="./assets/demo-icon.svg" alt="demo link"></a>
+                    </nav>
+                    <p>Flowfield mini-project done with the use of html canvas and javascript. Works using perlin noise
+                        to generate force vectors which are then used to move the particles around.</p>
+                    <p class="tags">HTML - Javascript</p>
+                </section>
+                <section class="project">
+                    <img src="./assets/stcp.png" alt="project image">
+                    <h4>STCP Routing System</h4>
+                    <nav class="links">
+                        <a href="https://github.com/P3rsus/STCPRoutingSystem"><img class="github" src="./assets/github-icon.svg" alt="github link"></a>
+                    </nav>
+                    <p>System that graphs STCP bus lines data into graphs. Algorithms, based on Dijkstra, Bellman-Ford
+                        and BFS, were made to calculate between two points the shortest paths, least line changes, least
+                        zone changes, etc.</p>
+                    <p class="tags">C++</p>
+                </section>
+                <section class="project">
+                    <img src="./assets/jetpack.png" alt="project image">
+                    <h4>Jetpack Joyride</h4>
+                    <nav class="links">
+                        <a><img class="github" src="./assets/github-icon.svg" alt="github link"></a>
+                    </nav>
+                    <p>A copycat of "Jetpack Joyride" done in Java. The purpose of this project was to utilize Design
+                        Patterns by finding Code Smells and Refactoring.</p>
+                    <p class="tags">Java - Design Patterns</p>
+                </section>
+                <section class="project">
+                    <img src="./assets/SatEmApp.png" alt="project image">
+                    <h4>SatEmApp</h4>
+                    <nav class="links">
+                        <a href="https://github.com/P3rsus/SatEmApp"><img class="github" src="./assets/github-icon.svg"
+                                alt="github link"></a>
+                    </nav>
+                    <p>An app made for the ground-station of the SatEmLat project called SatEmApp. It was made using
+                        Python, PyQt5, Pandas for data handling and matplotlib for graphs. The app is able to broadcast
+                        data to a website live and was used at CANSAT's finals to study the satellite's data.</p>
+                    <p class="tags">Python - Data Analysis - Pandas - Matplotlib</p>
+                </section>
+            </section>
+        </section>
+        <div class="sep"></div>
+        <section id="life">
+            <h3>MY LIFE</h3>
+            <section id="work">
+                <div class="years">
+                    <p>2022</p>
+                    <p>2021</p>
+                    <p>2020</p>
+                    <p>2019</p>
+                    <p>2005</p>
+                </div>
+                <img src="./assets/timeline-day.svg" class="timelineday" alt="timeline">
+                <img src="./assets/timeline-night.svg" class="timelinenight" alt="timeline">
+                <div class="desc">
+                    <section class="descobj">
+                        <h4>North Space</h4>
+                        <p class="when">2021 - Present</p>
+                        <p class="subtitle">Co - Founder</p>
+                        <p>
+                            This project was something I and a few old colleagues created to participate in the EUROC -
+                            European Rocketry Challenge.
+                        </p>
+                        <p>
+                            EuRoC is a challenge that seeks to stimulate engineering students to design, build, and
+                            launch their rockets.
+                            My responsibility within the team is to develop/manage all the software needed:
+                            Website; ground-station software; onboard computer software; etc.
+                        </p>
+                    </section>
+                    <section class="descobj">
+                        <h4>University of Porto - FEUP</h4>
+                        <p class="when">2020 - Present</p>
+                        <p class="subtitle">Current Score: 16</p>
+                        <p>
+                            I am currently taking a Bachelor's at FEUP in software engineering.
+                        </p>
+                        <p>
+                            FEUP has allowed me to learn a lot of computer languages and how to go about
+                            problem-solving.
+                            Additionally, it has given me the foundations to work confidently on any project.
+                        </p>
+                        <p>
+                            Throughout my course, I have done a lot of projects to practice my skills. A few of them are
+                            in the 'FEATURED PROJECTS' above.
+                        </p>
+                    </section>
+                    <section class="descobj">
+                        <h4>SatEmLat</h4>
+                        <p class="when">2019 - 2021</p>
+                        <p class="subtitle">Co - Founder & 2 Awards: Best Team Work; Best Technical Performance</p>
+                        <p>
+                            SatEmLat is a team founded in 2019 to participate in CanSat Portugal. This project revolves
+                            around building and coding a satellite the size of a can.
+                        </p>
+                        <p>
+                            In 2019, I and five others participated in the team SatEmLat and won an award for Best
+                            Teamwork. The next year, with a slightly different team, we participated again. We were
+                            through to
+                            the competition, but due to the pandemic, they got postponed to 2021. In that edition of
+                            CanSat, we won the award for Best Technical Performance.
+                        </p>
+                    </section>
+                    <section class="descobj">
+                        <h4>Colégio de Nossa Senhora do Rosário</h4>
+                        <p class="when">2005 - 2020</p>
+                        <p class="subtitle">Final Score: 19</p>
+                        <p>
+                            I studied at CNSR all my life. There I got a great education and a strong science background
+                            with a lot of hands-on learning.
+                        </p>
+                        <p> Over the years, I got the chance to participate in multiple activities at my school. I was
+                            able to win school robotics competitions, be a member of the Student
+                            Association, reach C1 Advanced level in Cambridge English and go to the European Parliament
+                            with a few other students as a reward for being the best Ambassador School in Portugal.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </section>
+        <div class="sep"></div>
+        <section id="contactarea">
+            <h3>Let's Connect</h3>
+            <section id="contact">
+                <div class="rightside">
+                    <p>Hit me up if you want to talk about any opportunity or if you just want to chat.</p>
+                    <a href="https://www.linkedin.com/in/pedrofonseca02">
+                        <figure>
+                            <img src="./assets/linkedIn-icon.svg" alt="linkedIn icon">
+                            <figcaption>LinkedIn</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://github.com/P3rsus">
+                        <figure>
+                            <img src="./assets/github-icon.svg" alt="github icon">
+                            <figcaption>Github</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <form action="https://getform.io/f/d044b491-a2cb-4391-ab20-bc656d807263" method="POST">
+                    <input name="Name" type="text" placeholder="Name"><br>
+                    <input name="Email" type="text" placeholder="Email"><br>
+                    <textarea name="Message" placeholder="Message" class="message" rows="5"></textarea><br>
+                    <button type="submit">
+                        Send Message
+                        <img src="./assets/send-icon.svg" alt="send icon">
+                    </button>
+                </form>
+            </section>
+        </section>
+    </div>
+    <p id="copyright">© 2022 Pedro Fonseca</p>
+</body>
+
+</html>
