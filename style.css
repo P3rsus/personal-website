@@ -687,7 +687,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 877px) {
     #projects {
         display: block;
     }
