@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     color: #000000;
     overflow: hidden;
     margin: 0;
@@ -498,10 +498,13 @@ h3 {
 
 #copyright {
     text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1em;
 }
 
 .dark {
-    background-color: #333333;
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -591,6 +594,10 @@ h3 {
 
 .dark .sep {
     border-color: #F0F0F0;
+}
+
+.dark #copyright {
+    background-color: #333333;
 }
 
 @media screen and (max-width: 978px) {
