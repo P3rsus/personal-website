@@ -69,9 +69,9 @@ body {
     top: 0;
     right: 0;
     background-color: rgba(217, 217, 217, 0.55);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(7px);
     padding: 2em;
-    padding-right: 6.5em;
+    padding-top: 4.5em;
     border-bottom-left-radius: 1em;
     display: none;
 }
