@@ -1,5 +1,6 @@
 html, body {
     overflow-x: hidden;
+    line-height: 1;
 }
 
 body {
@@ -147,7 +148,7 @@ body {
 #main > h2 {
     font-size: 5.5em;
     margin: 0;
-    margin-top: -0.45em;
+    margin-bottom: 0.5em;
     background: linear-gradient(90deg, #FEB139, #F55353, #143F6B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -287,6 +288,7 @@ h3 {
 
 .project > p {
     font-size: 0.9em;
+    line-height: 1.2;
     margin: 0;
     margin-top: 3.7em;
     text-align: justify;
@@ -323,12 +325,12 @@ h3 {
 #life > #work > .years {
     font-size: 1.2em;
     font-weight: 600;
-    margin-top: 160px;
+    margin-top: 168px;
     margin-right: 0.5em;
 }
 
 #life > #work > .years > p {
-    margin-top: 183px;
+    margin-top: 197.5px;
 }
 
 #life > #work > .years > p:first-child {
@@ -346,7 +348,7 @@ h3 {
 }
 
 #life > #work > .desc {
-    margin-top: 188px;
+    margin-top: 196.5px;
 }
 
 #life > #work > .desc > .descobj {
@@ -370,12 +372,14 @@ h3 {
     font-size: 0.84em;
     color: #F55353;
     margin: 0;
-    margin-top: -0.3em;
+    margin-top: 0.2em;
 }
 
 #life > #work > .desc > .descobj > p {
     margin: 0;
     font-size: 0.84em;
+    line-height: 1.2;
+    margin-top: 0.5em;
     text-align: justify;
 }
 
@@ -664,6 +668,7 @@ h3 {
         margin: 0;
         margin-left: 1em;
         margin-right: 1em;
+        margin-bottom: 0.85em;
     }
 }
 
