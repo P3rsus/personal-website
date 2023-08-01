@@ -326,7 +326,7 @@ h3 {
 #life > #work > .years {
     font-size: 1.2em;
     font-weight: 600;
-    margin-top: 168px;
+    margin-top: 399px;
     margin-right: 0.5em;
 }
 
@@ -341,7 +341,6 @@ h3 {
 #life > #work > img {
     margin-right: 0.5em;
     width: 171px;
-    height: 1210.13px;
 }
 
 #life > #work > .timelinenight {
@@ -349,11 +348,11 @@ h3 {
 }
 
 #life > #work > .desc {
-    margin-top: 196.5px;
+    margin-top: 6px;
 }
 
 #life > #work > .desc > .descobj {
-    height: 214px;
+    height: 213px;
 }
 
 #life > #work > .desc > .descobj > h4 {
