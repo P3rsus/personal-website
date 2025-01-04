@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const gif = document.getElementById('animated-gif');
-    const finalFrame = document.getElementById('final-frame');
+    const video = document.getElementById('animated-autograph');
 
-    if (!gif || !finalFrame) {
-        console.error("GIF or final frame not found in the DOM.");
+    if (!video) {
+        console.error("Video not found in the DOM.");
         return;
     }
 
@@ -15,24 +14,29 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    function playGif() {
-        const gifDuration = 3820;
-        setTimeout(() => {
-            gif.style.display = 'none';
-            finalFrame.style.display = 'block';
-        }, gifDuration);
+    function playVideo() {
+        video.classList.remove('hidden');
+        video.classList.add('visible');
+        video.play();
+
+        // Ensure the video pauses on the last frame when it ends
+        video.addEventListener('ended', () => {
+            video.pause();
+        });
     }
 
     function handleScroll() {
-        if (isInView(gif)) {
-            playGif();
-            window.removeEventListener('scroll', handleScroll);
+        if (isInView(video)) {
+            playVideo();
+            window.removeEventListener('scroll', handleScroll); // Ensures it triggers only once
         }
     }
 
-    if (isInView(gif)) {
-        playGif();
+    // Check if the video is already in view on page load
+    if (isInView(video)) {
+        playVideo();
     } else {
+        // Add the scroll listener if the video is not in view
         window.addEventListener('scroll', handleScroll);
     }
 });

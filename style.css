@@ -69,13 +69,9 @@ h3 {
     margin-top: 1rem;
 }
 
-#main .gif-container img {
+#main .gif-container #animated-autograph {
     width: 450px;
     max-width: 100%;
-}
-
-#main .final-autograph {
-    display: none;
 }
 
 #bottom {
