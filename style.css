@@ -295,6 +295,15 @@ footer > div > #copyright {
     #timeline > img {
         display: none;
     }
+
+    #timeline > .desc > .descobj {
+        margin-top: 1.5rem;
+    }
+
+    #timeline > .desc > .descobj > p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 610px) {
