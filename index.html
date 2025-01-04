@@ -11,330 +11,285 @@
     <link rel="stylesheet preconnect" href="https://use.typekit.net/ivx1jos.css" async>
     <link rel="stylesheet" href="style.css">
     <link
-        href="favicon-light.png"
+        href="favicon.png"
         rel="icon"
-        media="(prefers-color-scheme: light)"
     />
-    <link
-        href="favicon-dark.png"
-        rel="icon"
-        media="(prefers-color-scheme: dark)"
-    />
+
+    <script src="./javascript/autograph.js" defer></script>
 </head>
 
 <body>
-    <script src="./javascript/hamburger.js" defer></script>
-    <script src="./javascript/scrolling.js" defer></script>
-    <script src="./javascript/daynightmode.js" defer></script>
-    <script src="./flowfield/perlin.js"></script>
-    <script src="./flowfield/vector.js"></script>
-    <script src="./flowfield/particle.js"></script>
-    <script src="./flowfield/makeunique.js" defer></script>
     <header id="site-header">
-        <h1>PF<span class="chgcol">.</span></h1>
-        <nav>
-            <a href="#main">About</a>
-            <a href="#featuredprojects">Projects</a>
-            <a href="#life">My Life</a>
-            <a href="#contactarea">Contact</a>
-            <a href="website resume.pdf" id="resumeheader">RESUME</a>
-            <img class='daymode' src="./assets/day-mode.svg" alt="day mode">
-            <img class='nightmode' src="./assets/night-mode.svg" alt="night mode">
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <nav class="hamburger-menu">
-                <a href="#main">About</a>
-                <a href="#featuredprojects">Projects</a>
-                <a href="#life">My Life</a>
-                <a href="#contactarea">Contact</a>
-                <img class='daymode' src="./assets/day-mode.svg" alt="day mode">
-                <img class='nightmode' src="./assets/night-mode.svg" alt="night mode">
-            </nav>
-        </nav>
+        <ul class="links">
+            <li><a href="https://www.linkedin.com/in/pedrofonseca02/">LinkedIn</a></li>
+            <li><a href="mailto:pedrojgfonseca@gmail.com">Email</a></li>
+            <li><a href="https://github.com/P3rsus">GitHub</a></li>
+            <li class="important"><a href="./resume.pdf">Resume</a></li>
+        </ul>
     </header>
-    <canvas id="unique" width="1920" height="2100"></canvas>
     <section id="main">
-        <p id="hey">Hey, I'm</p>
-        <h2>Pedro Fonseca</h2>
-        <p>I'm a <span class="highlight">software engineer</span> based in <span class="highlight">Porto,
-                Portugal</span>. I enjoy creating things that bring value to people's lives, whether that be
-            websites,
-            applications, or anything in between.</p>
-        <p>Currently doing my <span class="highlight">Master's at FEUP</span>, I've managed to gain a <span
-                class="highlight">decent amount of experience</span> and valuable knowledge from all different kinds
-            of
-            fields throughout my projects.</p>
-        <nav class="contacts">
-            <a href="#contactarea">
-                <img src="./assets/border-contacts-first.svg" alt="border">
-                <figure>
-                    <img src="./assets/email-icon.svg" alt="email icon">
-                    <figcaption>Send an email</figcaption>
-                </figure>
-            </a>
-            <a href="https://www.linkedin.com/in/pedrofonseca02">
-                <img src="./assets/border-contacts-second.svg" alt="border">
-                <figure>
-                    <img src="./assets/linkedIn-icon.svg" alt="linkedIn icon">
-                    <figcaption>LinkedIn</figcaption>
-                </figure>
-            </a>
-            <a href="https://github.com/P3rsus">
-                <img src="./assets/border-contacts-third.svg" alt="border">
-                <figure>
-                    <img src="./assets/github-icon.svg" alt="github icon">
-                    <figcaption>Github</figcaption>
-                </figure>
-            </a>
-        </nav>
-        <img src="./assets/arrow.svg" alt="scroll down arrow">
+        <div>
+            <h1>PEDRO FONSECA<span class="dot">.</span></h1>
+            <p class="summary">I'm a software engineer based in Porto, Portugal, currently pursuing an MSc at FEUP in Software Engineering and Artificial Intelligence, with an expected graduation in June 2025. With a passion for solving complex problems and delivering innovative solutions, I have developed a strong foundation through diverse projects and collaborations. Combining technical expertise with excellent communication and teamwork, I am eager to contribute to digital transformation and modernization efforts as a digital consultant/associate.
+            </p>
+            <div class="gif-container">
+                <img id="animated-gif" src="autograph.gif" alt="autograph">
+                <img class="final-autograph" id="final-frame" src="final_autograph.png" alt="Final Autograph">
+            </div>
+        </div>
     </section>
-    <div class="background">
-        <section id="featuredprojects">
-            <h3>FEATURED PROJECTS</h3>
-            <section id="projects">
-                <section class="project">
-                    <img src="./assets/ervicee.webp" alt="project image" width="768px">
-                    <h4>ervicee</h4>
-                    <p>An AI-powered service search platform built with GPT-4, ReactJS, FastAPI, PostgreSQL, and Stripe for accurate service recommendations and secure subscription management.</p>
-                    <p class="tags">LLMs/GPT - ReactJS - FastAPI</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/fonsii.webp" alt="project image" width="768px">
-                    <h4>Fonsii</h4>
-                    <p>The Airbnb for cars with a Django backend, React Native mobile app, Stripe payment processing, and middleman commissions for seamless car rentals.</p>
-                    <p class="tags">ReactNative (iOS/Android) - Stripe Pay</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/block-escape.webp" alt="project image" width="768px">
-                    <h4>Block Escape</h4>
-                    <p>Block Escape was a project to learn more about AI. The goal was to recreate a game and implement search algorithms that were able to come up with solutions to the game.</p>
-                    <p class="tags">AI - Search Algorithms - Python</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/infinity-auctions.webp" alt="project image" width="768px">
-                    <h4>Infinity Auctions</h4>
-                    <p>Infinity Auctions is a web application for users to bid and auction items. The website was made in laravel and it's database in postgresql. Docker was also used in this project to run the database.</p>
-                    <p class="tags">Laravel - PostgreSQL - Docker</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/wana-prolog.webp" alt="project image" width="768px">
-                    <h4>Wana</h4>
-                    <p>Wana is a 2 player board game that consists in traping the opponent's marbles. Project was done in Prolog and AI was implemented using the Minimax algorithm.</p>
-                    <p class="tags">Prolog - AI - Minimax</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/personal-website.webp" alt="project image" width="768px">
-                    <h4>Personal Website</h4>
-                    <nav class="links">
-                        <a href="https://github.com/P3rsus/personal-website"><img class="github"
-                                src="./assets/github-icon.svg" alt="github link"></a>
-                    </nav>
-                    <p>My personal website made with html, css and javascript. Integrates the flowfield mini-project at
-                        the top. Presents my different projects and my overall experience.</p>
-                    <p class="tags">HTML - CSS - Javascript</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/flowfield.webp" alt="project image" width="768px">
-                    <h4>Flowfield</h4>
-                    <nav class="links">
-                        <a href="https://github.com/P3rsus/personal-website"><img class="github"
-                                src="./assets/github-icon.svg" alt="github link"></a>
-                        <a href="flowfield.html"><img class="demo" src="./assets/demo-icon.svg" alt="demo link"></a>
-                    </nav>
-                    <p>Flowfield mini-project done with the use of html canvas and javascript. Works using perlin noise
-                        to generate force vectors which are then used to move the particles around.</p>
-                    <p class="tags">HTML - Javascript</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/stcp.webp" alt="project image" width="768px">
-                    <h4>STCP Routing System</h4>
-                    <nav class="links">
-                        <a href="https://github.com/P3rsus/STCPRoutingSystem"><img class="github"
-                                src="./assets/github-icon.svg" alt="github link"></a>
-                    </nav>
-                    <p>System that graphs STCP bus lines data into graphs. Algorithms, based on Dijkstra, Bellman-Ford
-                        and BFS, were made to calculate between two points the shortest paths, least line changes, least
-                        zone changes, etc.</p>
-                    <p class="tags">C++</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/jetpack.webp" alt="project image" width="768px">
-                    <h4>Jetpack Joyride</h4>
-                    <nav class="links">
-                        <a href="https://github.com/P3rsus/JetpackJoyride"><img class="github"
-                                src="./assets/github-icon.svg" alt="github link"></a>
-                    </nav>
-                    <p>A copycat of "Jetpack Joyride" done in Java. The purpose of this project was to utilize Design
-                        Patterns by finding Code Smells and Refactoring.</p>
-                    <p class="tags">Java - Design Patterns</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/SatEmApp.webp" alt="project image" width="768px">
-                    <h4>SatEmApp</h4>
-                    <nav class="links">
-                        <a href="https://github.com/P3rsus/SatEmApp"><img class="github" src="./assets/github-icon.svg"
-                                alt="github link"></a>
-                    </nav>
-                    <p>An app made for the ground-station of the SatEmLat project called SatEmApp. It was made using
-                        Python, PyQt5, Pandas for data handling and matplotlib for graphs. The app is able to broadcast
-                        data to a website live and was used at CANSAT's finals to study the satellite's data.</p>
-                    <p class="tags">Python - Data Analysis - Pandas - Matplotlib</p>
-                </section>
-                <section class="project">
-                    <img src="./assets/pocketblackjack.webp" alt="project image" width="768px">
-                    <h4>Pocket Blackjack</h4>
-                    <p>Pocket Blackjack is a mobile app in development for card counting enthusiasts looking to improve their
-                        game. It is a project I have been working on, through Agile Methodologies, using React-Native.</p>
-                    <p class="tags">React - React-Native - Agile Methodologies</p>
-                </section>
-            </section>
-        </section>
-        <div class="sep"></div>
-        <section id="life">
-            <h3>MY LIFE</h3>
-            <section id="work">
-                <div class="years">
-                    <p>2023</p>
-                    <p>2022</p>
-                    <p>2021</p>
-                    <p>2020</p>
-                    <p>2019</p>
-                    <p>2005</p>
+    <div id="bottom">
+        <div id="skills">
+            <h2>SKILLS</h2>
+            <h3>SOFT SKILLS</h3>
+            <div class="list-skills">
+                <div class="skill">
+                    <img src="./assets/communication.svg" alt="communication">
+                    <p>Communication</p>
                 </div>
-                <img src="./assets/timeline-day.svg" class="timelineday" alt="timeline">
-                <img src="./assets/timeline-night.svg" class="timelinenight" alt="timeline">
+                <div class="skill">
+                    <img src="./assets/teamwork.svg" alt="teamwork">
+                    <p>Teamwork</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/leadership.svg" alt="leadership">
+                    <p>Leadership & Project Mng.</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/problem-solving.svg" alt="problem solving">
+                    <p>Problem-Solving & Critical Thinking</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/innovation.svg" alt="innovation">
+                    <p>Innovation & Adaptability</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/organizational-skills.svg" alt="organizational skills">
+                    <p>Organizational Skills</p>
+                </div>
+            </div>
+            <h3>TECHNICAL SKILLS</h3>
+            <div class="list-skills">
+                <div class="skill">
+                    <img src="./assets/excel.png" alt="excel">
+                    <p>Excel</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/powerpoint.png" alt="powerpoint">
+                    <p>Powerpoint</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/python.png" alt="python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/javascript.png" alt="javascript">
+                    <p>Javascript</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/sql.png" alt="sql">
+                    <p>PostgreSQL & SQLite</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/java.png" alt="java">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/cpp.png" alt="cpp">
+                    <p>C++</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/react.webp" alt="react">
+                    <p>React & React Native</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/next-js.svg" alt="next-js">
+                    <p>Next.js</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/django.png" alt="django">
+                    <p>Django</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/mongodb.svg" alt="mongodb">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/git.png" alt="git">
+                    <p>Git</p>
+                </div>
+            </div>
+        </div>
+        <div id="path">
+            <h2>PATH</h2>
+            <section id="timeline">
+                <img src="./assets/timeline.svg" class="timeline" alt="timeline">
                 <div class="desc">
                     <section class="descobj">
-                        <h4>MSc in Software Engineering at FEUP</h4>
-                        <p class="when">2023 - Present</p>
-                        <p class="subtitle">Ongoing</p>
+                        <p class="when">Sep 2024 - Feb 2025</p>
+                        <h4>Politecnico di Milano</h4>
+                        <p class="subtitle">Semester Abroad (ERASMUS)</p>
                         <p>
-                            I'm starting my master's in September. I believe this will be a great opportunity to learn more in the area that I love and become a better professional.
+                            My semester abroad at Politecnico di Milano provided an invaluable opportunity to deepen my technical expertise while engaging with a globally diverse academic community. Ranked among the top universities worldwide in engineering and technology, this experience broadened my perspective and strengthened my adaptability.
                         </p>
                         <p>
-                            I hope to specialize in Artificial Intelligence and Project Management in my master's. These are areas I am very interested in and I can't wait to dive in.
-                        </p>
-                    </section>
-                    <section class="descobj">
-                        <h4>Freelancing</h4>
-                        <p class="when">2023 - Present</p>
-                        <p class="subtitle">Creating solutions for clients</p>
-                        <p>
-                            I am a passionate software engineer with a specialization in creating valuable website and application solutions. Throughout my freelancing journey, I've had the opportunity to collaborate with esteemed companies like Pressmedia and Lasermaq, and together, we have consistently surpassed expectations with engaging and innovative projects.
-                        </p>
-                        <p>
-                            My clients often praise my adaptability, creativity, and the remarkable outcomes I produce. With an entrepreneurial mindset and strong problem-solving skills, I am always ready to take on new projects and turn ideas into reality. Let's connect and work together to bring your vision to life!
+                            Collaborating with international peers and navigating new challenges reinforced my problem-solving skills and ability to work in dynamic environments. This enriching chapter in my education continues to shape my professional outlook and global approach to innovation.
                         </p>
                     </section>
                     <section class="descobj">
-                        <h4>Armis Group</h4>
-                        <p class="when">2023 Jan-Jun</p>
-                        <p class="subtitle">Internship - Machine Learning in fintech</p>
+                        <p class="when">Jan 2023 - Present</p>
+                        <h4>Freelancing Consulting</h4>
+                        <p class="subtitle">Self-Employed</p>
                         <p>
-                            During my internship at Armis Financial Technology, a fintech company, I gained valuable experience in the development of financial technologies and personal finance management tools.
+                            As a Freelancing Consultant, I've focused on guiding businesses through their digital transformation journeys, most notably supporting Pressmedia in optimizing their IT infrastructure and CRM systems. My work has included implementing tools to enhance efficiency, boosting website traffic through SEO strategies, and advising on adopting cutting-edge technologies like LLMs.                        </p>
+                        <p>
+                            This role has given me invaluable experience in understanding client needs, crafting tailored solutions, and delivering measurable results. Interactions with diverse clients have also honed my ability to align technical solutions with distinct business objectives.                        </p>
+                    </section>
+                    <section class="descobj">
+                        <p class="when">Sep 2023 - Jun 2025</p>
+                        <h4>Faculty of Engineering, University of Porto</h4>
+                        <p class="subtitle">MSc in Informatics Engineering and Computing - GPA: 17</p>
+                        <p>
+                            I am currently pursuing a Master's in Informatics Engineering & Computing at the Faculty of Engineering, University of Porto (FEUP), with specializations in Software Engineering and Artificial Intelligence. Expected to graduate in June 2025, this program equips me with advanced knowledge in areas such as Agile methodologies, requirements engineering, deep learning, and neural networks.                        </p>
+                        <p>
+                            Through this academic journey, I have developed the skills and expertise to tackle complex technological challenges and deliver innovative solutions. My passion lies in leveraging cutting-edge technologies to drive impactful transformations in both academic and professional settings.                        </p>
+                    </section>
+                    <section class="descobj">
+                        <p class="when">Jan 2023 - Jun 2023</p>
+                        <h4>Software Engineering Intern</h4>
+                        <p class="subtitle">Armis Group</p>
+                        <p>
+                            During my internship at Armis Group, I developed a transaction categorization system using machine learning algorithms, achieving high accuracy and integrating the solution into a banking application. This project showcased my ability to deliver robust, user-friendly solutions in the fintech space.                        </p>
+                        <p>
+                            In addition to technical development, I contributed to research on expense pattern detection and worked with technologies such as Python, React, and Azure. The experience reinforced my expertise in applying AI and software engineering principles to solve complex financial challenges.                        </p>
+                    </section>
+                    <section class="descobj">
+                        <p class="when">Sep 2021 - Sep 2023</p>
+                        <h4>Co-Founder & Head of Engineering</h4>
+                        <p class="subtitle">North Space</p>
+                        <p>
+                            As Co-Founder and Head of Engineering at North Space, I played a pivotal role in expanding the team and fostering collaborations with institutions like ISEP. Leading our participation in the European Rocketry Challenge (EUROC), I focused on driving team growth and ensuring seamless coordination across all technical efforts.
                         </p>
                         <p>
-                            I focused on developing algorithms to support efficient categorisation of customer transactions, enabling better understanding of financial behaviour and personalised recommendations. I successfully integrated these algorithms into a banking application, delivering a robust and accurate transaction categorisation system.
+                            This experience strengthened my leadership skills and underscored the importance of building strong partnerships to achieve ambitious goals.
                         </p>
                     </section>
                     <section class="descobj">
-                        <h4>North Space</h4>
-                        <p class="when">2021 - 2023</p>
-                        <p class="subtitle">Co - Founder</p>
+                        <p class="when">Sep 2020 - Jun 2023</p>
+                        <h4>Faculty of Engineering, University of Porto</h4>
+                        <p class="subtitle">BSc in Informatics Engineering and Computing - GPA: 16</p>
                         <p>
-                            This project was something I and a few old colleagues created to participate in the EUROC -
-                            European Rocketry Challenge.
+                            I completed my Bachelor's in Informatics Engineering & Computing at the Faculty of Engineering, University of Porto (FEUP), graduating with a GPA of 16. This program provided a solid foundation in computer science, encompassing areas like algorithms, programming, databases, and artificial intelligence.
                         </p>
                         <p>
-                            EuRoC is a challenge that seeks to stimulate engineering students to design, build, and
-                            launch their rockets.
-                            My responsibility within the team is to develop/manage all the software needed:
-                            Website; ground-station software; onboard computer software; etc.
+                            Through diverse coursework and practical projects, I developed a strong technical skillset and problem-solving mindset. My time at FEUP prepared me to approach challenges with analytical precision and innovative thinking, setting the stage for my continued growth in software engineering and artificial intelligence.                        </p>
+                    </section>
+                    <section class="descobj">
+                        <p class="when">Sep 2019 - Sep 2021</p>
+                        <h4>Co-Founder</h4>
+                        <p class="subtitle">SatEmLat</p>
+                        <p>
+                            SatEmLat was a project centered on developing can-sized satellites for the CanSat Portugal competition. As a co-founder, I contributed to designing critical systems, including sensors and ground-station software, while also leading stress tests and live data visualization during flights.
+                        </p>
+                        <p>
+                            Our work earned recognition for both technical performance and teamwork, winning awards across two editions of the competition. This experience highlighted my ability to merge technical innovation with collaborative problem-solving in high-pressure scenarios.
                         </p>
                     </section>
                     <section class="descobj">
-                        <h4>BSc in Software Engineering at FEUP</h4>
-                        <p class="when">2020 - 2023</p>
-                        <p class="subtitle">Final Score: 16</p>
+                        <p class="when">Sep 2017 - Jun 2020</p>
+                        <h4>Colégio 'Nossa Senhora do Rosário'</h4>
+                        <p class="subtitle">High School Diploma (Science & Technology) - GPA: 19</p>
                         <p>
-                            I  have completed my Bachelor's at FEUP in software engineering.
+                            At Colégio de Nossa Senhora do Rosário, I graduated with a GPA of 19 in Science and Technology, laying a strong foundation for my future academic pursuits. My time there was marked by both academic excellence and active participation in extracurricular activities, such as robotics competitions and the Ambassador School Program.
                         </p>
-                        <p>
-                            FEUP has given me a strong foundation in computer science. I have completed diverse coursework in math, algorithms, programming, databases, AI, and more. 
-                        </p>
-                        <p>
-                            I am skilled in various languages and frameworks and I have experience in practical projects, some of which are here on my website.
-                        </p>
-                    </section>
-                    <section class="descobj">
-                        <h4>SatEmLat</h4>
-                        <p class="when">2019 - 2021</p>
-                        <p class="subtitle">Co - Founder & 2 Awards: Best Team Work; Best Technical Performance</p>
-                        <p>
-                            SatEmLat is a team founded in 2019 to participate in CanSat Portugal. This project revolves
-                            around building and coding a satellite the size of a can.
-                        </p>
-                        <p>
-                            In 2019, I and five others participated in the team SatEmLat and won an award for Best
-                            Teamwork. The next year, with a slightly different team, we participated again. We were
-                            through to
-                            the competition, but due to the pandemic, they got postponed to 2021. In that edition of
-                            CanSat, we won the award for Best Technical Performance.
-                        </p>
-                    </section>
-                    <section class="descobj">
-                        <h4>Colégio de Nossa Senhora do Rosário</h4>
-                        <p class="when">2005 - 2020</p>
-                        <p class="subtitle">Final Score: 19</p>
-                        <p>
-                            I studied at CNSR all my life. There I got a great education and a strong science background
-                            with a lot of hands-on learning.
-                        </p>
-                        <p> Over the years, I got the chance to participate in multiple activities at my school. I was
-                            able to win school robotics competitions, be a member of the Student
-                            Association, reach C1 Advanced level in Cambridge English and go to the European Parliament
-                            with a few other students as a reward for being the best Ambassador School in Portugal.
+                        <p> 
+                            These experiences nurtured my passion for STEM fields, honed my leadership abilities, and instilled a commitment to lifelong learning.
                         </p>
                     </section>
                 </div>
             </section>
-        </section>
-        <div class="sep"></div>
-        <section id="contactarea">
-            <h3>Let's Connect</h3>
-            <section id="contact">
-                <div class="rightside">
-                    <p>Hit me up if you want to talk about any opportunity or if you just want to chat.</p>
-                    <a href="https://www.linkedin.com/in/pedrofonseca02">
-                        <figure>
-                            <img src="./assets/linkedIn-icon.svg" alt="linkedIn icon">
-                            <figcaption>LinkedIn</figcaption>
-                        </figure>
-                    </a>
-                    <a href="https://github.com/P3rsus">
-                        <figure>
-                            <img src="./assets/github-icon.svg" alt="github icon">
-                            <figcaption>Github</figcaption>
-                        </figure>
-                    </a>
+        </div>
+        <div id="projects">
+            <h2>PROJECTS</h2>
+            <div class="project">
+                <img src="./assets/critical.jpg" alt="critical">
+                <div>
+                    <p class="when">Sep 2024 - Jun 2025</p>
+                    <h4>Automated Acceptance Testing for Mobile Apps</h4>
+                    <p class="subtitle">Collaboration with Critical Techworks</p>
+                    <ul class="project-description">
+                        <li>MSc thesis combining Software Engineering and AI to streamline acceptance testing processes.</li>
+                        <li>Leveraging GPT-4 or LLaMA 3.3 to generate Gherkin Acceptance Tests and executable test code using Flutter Driver.</li>
+                        <li>Aiming to significantly reduce developer time spent on writing tests, employing cutting-edge LLM technology.</li>
+                    </ul>
                 </div>
-                <form action="https://getform.io/f/4fa754be-b4ac-41bc-91a9-712de513c043" method="POST">
-                    <input name="Name" type="text" placeholder="Name"><br>
-                    <input name="Email" type="email" placeholder="Email"><br>
-                    <textarea name="Message" placeholder="Message" class="message" rows="5"></textarea><br>
-                    <button type="submit">
-                        Send Message
-                        <img src="./assets/send-icon.svg" alt="send icon">
-                    </button>
-                </form>
-            </section>
-        </section>
+            </div>
+            <div class="project alternate">
+                <img src="./assets/vaxpred.png" alt="vaxpred">
+                <div>
+                    <p class="when">Sep 2023 - Feb 2024</p>
+                    <h4>Vaxpred</h4>
+                    <p class="subtitle">Product Owner</p>
+                    <ul class="project-description">
+                        <li>Managed a team of 24 to develop a systems-immunology platform for vaccine efficacy prediction.</li>
+                        <li>Successfully gathered requirements using interviews, laddering, and brainstorming.</li>
+                        <li>Followed Scrum methodology for a successful development environment.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./assets/genesys.jpg" alt="genesys">
+                <div>
+                    <p class="when">Feb 2024 - Jun 2024</p>
+                    <h4>ZAAI - Genesys</h4>
+                    <p class="subtitle">Team Leader</p>
+                    <ul class="project-description">
+                        <li>Directed the development of a retrieval-augmented generative AI system for document interaction.</li>
+                        <li>Designed features such as document indexing, PDF readers, and graph-based visualizations.</li>
+                        <li>Leveraged GPT-4, Llama, and Falcon models to optimize proprietary content utilization, achieving 40% reduction in routine inquiry calls.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project alternate">
+                <img src="./assets/ervicee.jpg" alt="ervicee">
+                <div>
+                    <p class="when">Feb 2024 - May 2024</p>
+                    <h4>ervicee</h4>
+                    <p class="subtitle">Start-Up Idea</p>
+                    <ul class="project-description">
+                        <li>Developed skills in requirements engineering, software architecture, and entrepreneurship, supported by comprehensive project documentation (e.g., requirements, architecture, business model canvas).</li>
+                        <li>Built a generative AI platform leveraging GPT-4 for service recommendations with a ReactJS front-end.</li>
+                        <li>Designed a secure PostgreSQL database and integrated Stripe for seamless subscription management.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./assets/fonsii.png" alt="fonsii">
+                <div>
+                    <p class="when">Sep 2024 - Mar 2024</p>
+                    <h4>Fonsii</h4>
+                    <p class="subtitle">Start-Up Idea</p>
+                    <ul class="project-description">
+                        <li>Developed an Airbnb-style car rental platform with a React Native app and Django backend, enabling seamless bookings and secure Stripe payments.</li>
+                        <li>Designed core features like dynamic pricing, user verification, and in-app messaging, enhancing convenience for renters and monetization for car owners.</li>
+                        <li>Gained expertise in product ideation, requirements engineering, and business modeling.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <p id="copyright">© 2024 Pedro Fonseca</p>
+    <footer>
+        <div>
+            Get in touch with me through my links below:
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/pedrofonseca02/">LinkedIn</a></li>
+                <li><a href="mailto:pedrojgfonseca@gmail.com">Email</a></li>
+                <li><a href="https://github.com/P3rsus">GitHub</a></li>
+                <li class="important"><a href="./resume.pdf">Resume</a></li>
+            </ul>
+            <p id="copyright">© 2025 Pedro Fonseca</p>
+        </div>
+    </footer>
 </body>
 
 </html>
